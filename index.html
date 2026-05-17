@@ -1,268 +1,415 @@
-export default function D365BizAppsGuruWebsite() {
-  return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-50 to-white text-gray-800">
-      {/* Header */}
-      <header className="bg-blue-900 text-white py-6 shadow-lg">
-        <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center">
-          <div className="flex items-center gap-4">
-            <img
-              src="/logo.png"
-              alt="D365 BizApps Guru Logo"
-              className="w-20 h-20 rounded-2xl shadow-lg bg-white p-2"
-            />
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>D365 BizApps Guru</title>
 
-            <div>
-              <h1 className="text-4xl font-bold">D365 BizApps Guru</h1>
-            <p className="text-lg mt-2 text-blue-200">
-                Real-World Skills for Next-Gen CRM Professionals
-              </p>
-            </div>
-          </div>
-
-          <button className="mt-4 md:mt-0 bg-white text-blue-900 px-6 py-3 rounded-2xl font-semibold shadow hover:scale-105 transition">
-            Contact for Demo
-          </button>
-        </div>
-      </header>
-
-      {/* Hero Section */}
-      <section className="max-w-6xl mx-auto px-6 py-16 grid md:grid-cols-2 gap-10 items-center">
-        
-        <div className="absolute inset-0 opacity-5 pointer-events-none overflow-hidden flex items-center justify-center">
-          <img
-            src="/logo.png"
-            alt="Background Logo"
-            className="w-[600px] h-[600px] object-contain"
-          />
-        </div>
-        <div>
-          <h2 className="text-5xl font-bold leading-tight text-blue-900">
-            Dynamics 365 CE Functional Training
-          </h2>
-
-          <p className="mt-6 text-lg leading-8 text-gray-700">
-            Professional Dynamics 365 Customer Engagement functional training
-            designed with real-time business scenarios, project-oriented
-            learning, implementation exposure, administration concepts,
-            testing practices, and interview preparation support.
-          </p>
-
-          <div className="mt-8 flex gap-4 flex-wrap">
-            <button className="bg-blue-900 text-white px-6 py-3 rounded-2xl shadow-lg hover:scale-105 transition">
-              Join Demo Session
-            </button>
-
-            <a
-              href="https://wa.me/918939213939"
-              target="_blank"
-              className="border border-blue-900 text-blue-900 px-6 py-3 rounded-2xl hover:bg-blue-50 transition"
-            >
-              WhatsApp Enquiry
-            </a>
-          </div>
-        </div>
-
-        <div className="bg-white rounded-3xl shadow-2xl p-8 border border-blue-100">
-          <h3 className="text-2xl font-bold text-blue-900 mb-6">
-            Training Modules
-          </h3>
-
-          <div className="grid grid-cols-2 gap-4">
-            {/* Clickable module cards with expandable training topics */}
-            {[
-              "Sales",
-              "Customer Service",
-              "Field Service",
-              "Marketing",
-              "Configuration",
-              "Customization",
-              "Security",
-              "Integration",
-            ].map((item) => (
-              <div
-                key={item}
-                className="bg-blue-50 p-4 rounded-2xl text-center font-medium shadow-sm"
-              >
-                {item}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Why Choose */}
-      <section className="bg-white py-16">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center text-blue-900 mb-12">
-            Why Choose D365 BizApps Guru?
-          </h2>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              "12+ Years of Industry Experience",
-              "Real-Time Project Exposure",
-              "Practical Business Scenarios",
-              "One-to-One Guidance",
-              "Interview Preparation Support",
-              "Implementation & Support Knowledge",
-            ].map((item) => (
-              <div
-                key={item}
-                className="bg-blue-50 rounded-3xl p-8 shadow hover:shadow-xl transition"
-              >
-                <h3 className="text-xl font-semibold text-blue-900">
-                  {item}
-                </h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Modules */}
-      <section className="py-16 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-12">
-            Modules Covered
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {[
-              {
-                title: "Sales Module",
-                desc: "Accounts, Contacts, Leads, Opportunities, Quotes, Orders, Invoices, Product Catalog, Forecasts & Sales Insights.",
-                topics: [
-                  "Accounts & Contacts",
-                  "Lead Management",
-                  "Opportunity Management",
-                  "Quotes, Orders & Invoices",
-                  "Product Catalog & Price Lists",
-                  "Sales Forecasting & Insights"
-                ]
-              },
-              {
-                title: "Customer Service",
-                desc: "Case Management, SLAs, Queues, Routing Rules, Dashboards & Reports.",
-                topics: [
-                  "Case Management",
-                  "Queues & Routing Rules",
-                  "SLAs & Entitlements",
-                  "Dashboards & Reports",
-                  "Automatic Record Creation Rules"
-                ]
-              },
-              {
-                title: "Field Service",
-                desc: "Work Orders, Schedule Board, Resource Scheduling, Inventory & Mobile App.",
-                topics: [
-                  "Work Orders & Incidents",
-                  "Schedule Board",
-                  "Resource Scheduling",
-                  "Inventory Management",
-                  "Field Service Mobile App"
-                ]
-              },
-              {
-                title: "Marketing",
-                desc: "Customer Journeys, Campaigns, Events, Lead Scoring & Marketing Analytics.",
-                topics: [
-                  "Customer Journeys",
-                  "Campaigns & Events",
-                  "Lead Scoring Models",
-                  "Marketing Analytics",
-                  "Segments & Customer Engagement"
-                ]
-              },
-              {
-                title: "Configuration & Customization",
-                desc: "Forms, Views, Business Rules, Security Roles, Solutions & Dashboards.",
-                topics: [
-                  "Tables & Columns",
-                  "Forms & Views",
-                  "Business Rules",
-                  "Business Process Flows",
-                  "Security Roles",
-                  "Solutions Management"
-                ]
-              },
-              {
-                title: "Integration & Testing",
-                desc: "ADO, Dual Write, SIT, UAT, Go-Live & Incident Management.",
-                topics: [
-                  "Azure DevOps (ADO)",
-                  "Dual Write Integration",
-                  "Outlook & SharePoint Integration",
-                  "SIT / UAT / Go-Live",
-                  "Bug Tracking & Incident Management"
-                ]
-              }
-            ].map((module) => (
-              <div
-                key={module.title}
-                className="bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20"
-              >
-                <h3 className="text-2xl font-bold mb-4">{module.title}</h3>
-                <p className="text-blue-100 leading-7 mb-4">{module.desc}</p>
-
-                <ul className="space-y-2 text-blue-50">
-                  {module.topics.map((topic) => (
-                    <li key={topic}>✔ {topic}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* About */}
-      <section className="py-16 bg-white">
-        <div className="max-w-5xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold text-blue-900 mb-8">
-            About D365 BizApps Guru
-          </h2>
-
-          <p className="text-lg leading-9 text-gray-700">
-            D365 BizApps Guru is a professional learning platform focused on
-            Dynamics 365 Customer Engagement (CE) functional training with 12+
-            years of industry experience. The training approach is designed to
-            provide practical business process understanding, real-time project
-            exposure, implementation knowledge, administration concepts,
-            testing practices, and functional consulting guidance aligned with
-            industry standards.
-          </p>
-        </div>
-      </section>
-
-      {/* Contact */}
-      <section className="py-16 bg-blue-50">
-        <div className="max-w-4xl mx-auto px-6 text-center">
-          <h2 className="text-4xl font-bold text-blue-900 mb-8">
-            Contact for Training & Demo Session
-          </h2>
-
-          <div className="bg-white rounded-3xl shadow-2xl p-10">
-            <p className="text-xl mb-4 font-semibold">
-              D365 BizApps Guru
-            </p>
-
-            <p className="text-gray-600 mb-3">
-              Dynamics 365 Customer Engagement Functional Training
-            </p>
-
-            <p className="mt-6 text-lg">📧 d365bizappsguru@gmail.com</p>
-            <p className="text-lg">📱 +91 8939213939 (WhatsApp)</p>
-            <p className="text-lg">🔗 LinkedIn: D365 BizApps Guru</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="bg-blue-900 text-white py-6 text-center">
-        <p>
-          © 2026 D365 BizApps Guru | Real-World Skills for Next-Gen CRM Professionals
-        </p>
-      </footer>
-    </div>
-  );
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
 }
+
+body{
+background:#f4f7ff;
+color:#1f2937;
+line-height:1.6;
+}
+
+header{
+background:#143b8f;
+padding:20px 0;
+color:white;
+}
+
+.container{
+width:90%;
+max-width:1200px;
+margin:auto;
+}
+
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:20px;
+}
+
+.logo img{
+width:90px;
+border-radius:15px;
+background:white;
+padding:5px;
+}
+
+.logo-text h1{
+font-size:42px;
+}
+
+.logo-text p{
+font-size:18px;
+color:#dbeafe;
+}
+
+.btn{
+background:#2563eb;
+color:white;
+padding:14px 25px;
+border-radius:12px;
+text-decoration:none;
+font-weight:bold;
+display:inline-block;
+}
+
+.hero{
+padding:80px 0;
+position:relative;
+overflow:hidden;
+}
+
+.hero::before{
+content:'';
+position:absolute;
+inset:0;
+background:url('logo.jpeg') center/contain no-repeat;
+opacity:0.05;
+}
+
+.hero-content{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+position:relative;
+z-index:1;
+}
+
+.hero h2{
+font-size:58px;
+line-height:1.2;
+color:#143b8f;
+margin-bottom:25px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:25px;
+}
+
+.hero img{
+width:100%;
+max-width:500px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin:50px auto;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.card h3{
+color:#143b8f;
+margin-bottom:15px;
+}
+
+.modules{
+background:#143b8f;
+padding:80px 0;
+color:white;
+}
+
+.modules h2{
+text-align:center;
+font-size:42px;
+margin-bottom:40px;
+}
+
+.module-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+details{
+background:white;
+color:#143b8f;
+padding:20px;
+border-radius:18px;
+}
+
+summary{
+font-size:22px;
+font-weight:bold;
+cursor:pointer;
+}
+
+details ul{
+margin-top:15px;
+padding-left:20px;
+}
+
+details li{
+margin-bottom:10px;
+}
+
+.about{
+padding:80px 0;
+}
+
+.about h2{
+font-size:42px;
+color:#143b8f;
+margin-bottom:20px;
+}
+
+.about p{
+font-size:20px;
+}
+
+.contact{
+background:#eaf1ff;
+padding:80px 0;
+text-align:center;
+}
+
+.contact h2{
+font-size:42px;
+color:#143b8f;
+margin-bottom:25px;
+}
+
+.contact p{
+font-size:22px;
+margin-bottom:10px;
+}
+
+footer{
+background:#143b8f;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero-content{
+grid-template-columns:1fr;
+}
+
+.hero h2{
+font-size:40px;
+}
+
+.logo-text h1{
+font-size:28px;
+}
+
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+<div class="container nav">
+
+<div class="logo">
+<img src="logo.jpeg" alt="Logo">
+
+<div class="logo-text">
+<h1>D365 BizApps Guru</h1>
+<p>Real-World Skills for Next-Gen CRM Professionals</p>
+</div>
+</div>
+
+<a class="btn" href="https://wa.me/918939213939">Contact for Demo</a>
+
+</div>
+</header>
+
+<section class="hero">
+
+<div class="container hero-content">
+
+<div>
+<h2>MASTER DYNAMICS 365 CRM WITH EXPERT TRAINING & REAL-WORLD PRACTICAL SKILLS</h2>
+
+<p>
+Professional Dynamics 365 Customer Engagement functional training with practical business scenarios, implementation exposure, testing concepts, administration guidance, and interview preparation support.
+</p>
+
+<a class="btn" href="https://wa.me/918939213939">
+Chat on WhatsApp
+</a>
+
+</div>
+
+<div>
+<img src="logo.jpeg" alt="D365 BizApps Guru">
+</div>
+
+</div>
+
+</section>
+
+<section class="container cards">
+
+<div class="card">
+<h3>12+ Years Industry Experience</h3>
+<p>Professional real-time functional training aligned with industry standards.</p>
+</div>
+
+<div class="card">
+<h3>Hands-on Training</h3>
+<p>Practical business scenarios with implementation and support exposure.</p>
+</div>
+
+<div class="card">
+<h3>Interview Preparation</h3>
+<p>Real-time interview guidance, resume support, and functional discussions.</p>
+</div>
+
+</section>
+
+<section class="modules">
+
+<div class="container">
+
+<h2>Modules Covered</h2>
+
+<div class="module-grid">
+
+<details>
+<summary>Sales Module</summary>
+<ul>
+<li>Accounts & Contacts</li>
+<li>Lead Management</li>
+<li>Opportunity Management</li>
+<li>Quotes, Orders & Invoices</li>
+<li>Product Catalog & Price Lists</li>
+<li>Sales Forecasting & Insights</li>
+</ul>
+</details>
+
+<details>
+<summary>Customer Service</summary>
+<ul>
+<li>Case Management</li>
+<li>Queues & Routing Rules</li>
+<li>SLAs & Entitlements</li>
+<li>Dashboards & Reports</li>
+<li>Automatic Record Creation Rules</li>
+</ul>
+</details>
+
+<details>
+<summary>Field Service</summary>
+<ul>
+<li>Work Orders & Incidents</li>
+<li>Schedule Board</li>
+<li>Resource Scheduling</li>
+<li>Inventory Management</li>
+<li>Field Service Mobile App</li>
+</ul>
+</details>
+
+<details>
+<summary>Marketing</summary>
+<ul>
+<li>Customer Journeys</li>
+<li>Campaigns & Events</li>
+<li>Lead Scoring</li>
+<li>Marketing Analytics</li>
+<li>Segments & Customer Engagement</li>
+</ul>
+</details>
+
+<details>
+<summary>Configuration & Customization</summary>
+<ul>
+<li>Tables & Columns</li>
+<li>Forms & Views</li>
+<li>Business Rules</li>
+<li>Business Process Flows</li>
+<li>Security Roles</li>
+<li>Solutions Management</li>
+</ul>
+</details>
+
+<details>
+<summary>Integration & Testing</summary>
+<ul>
+<li>Azure DevOps (ADO)</li>
+<li>Dual Write Integration</li>
+<li>Outlook & SharePoint Integration</li>
+<li>SIT / UAT / Go-Live</li>
+<li>Bug Tracking & Incident Management</li>
+</ul>
+</details>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="about">
+
+<div class="container">
+
+<h2>About D365 BizApps Guru</h2>
+
+<p>
+D365 BizApps Guru is a professional learning platform focused on Dynamics 365 Customer Engagement functional training with 12+ years of industry experience. The training approach is designed to provide practical business process understanding, real-time project exposure, implementation knowledge, administration concepts, testing practices, and functional consulting guidance aligned with industry standards.
+</p>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+<div class="container">
+
+<h2>Contact for Training & Demo Session</h2>
+
+<p><strong>WhatsApp:</strong> +91 8939213939</p>
+
+<p><strong>Email:</strong> d365bizappsguru@gmail.com</p>
+
+<p><strong>LinkedIn:</strong> D365 BizApps Guru</p>
+
+<br>
+
+<a class="btn" href="https://wa.me/918939213939">
+Contact on WhatsApp
+</a>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 D365 BizApps Guru | Dynamics 365 Customer Engagement Functional Training
+</footer>
+
+</body>
+</html>

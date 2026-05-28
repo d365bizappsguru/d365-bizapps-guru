@@ -87,37 +87,47 @@ border-radius:8px;
 background:rgba(255,255,255,0.12);
 }
 
-```css id="vuljmh"
+
 .hero-content{
-display:grid;
-grid-template-columns:1.2fr 0.8fr;
-gap:80px;
+display:flex;
 align-items:center;
-padding:60px 0;
+justify-content:space-between;
+gap:80px;
+padding:80px 0;
 }
-```css id="bjyr8j"
+
+.hero-content > div:first-child{
+flex:1;
+}
+
+.hero-content > div:last-child{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
 .hero-content h2{
-font-size:64px;
+font-size:58px;
 line-height:1.15;
 color:#143b8f;
 margin-bottom:30px;
-max-width:750px;
+max-width:700px;
+font-weight:700;
 }
 
 .hero-content p{
-font-size:22px;
+font-size:20px;
 line-height:1.9;
 color:#333;
-max-width:850px;
+max-width:780px;
+margin-bottom:25px;
 }
 
 .hero-content img{
 width:100%;
-max-width:520px;
-display:block;
-margin:auto;
+max-width:500px;
 }
-```
+
 
 .hero h2{
 font-size:58px;
@@ -208,7 +218,7 @@ margin-bottom:20px;
 .about p{
 font-size:20px;
 }
-```css id="m9x3pl"
+css id="m9x3pl"
 .why-choose{
 padding:90px 0;
 background:#f8fbff;
@@ -250,7 +260,7 @@ font-size:17px;
 line-height:1.8;
 color:#444;
 }
-    ```css id="n6r2vx"
+    css id="n6r2vx"
 .why-text{
 font-size:19px;
 line-height:1.9;
@@ -259,9 +269,7 @@ margin:0 auto 50px auto;
 text-align:justify;
 color:#333;
 }
-```
 
-```
 
 .contact{
 background:#eaf1ff;
@@ -413,9 +421,7 @@ The learning structure focuses on practical business process understanding, Func
 </div>
 
 </section>
-```
 
-```
 
 <section class="contact">
 

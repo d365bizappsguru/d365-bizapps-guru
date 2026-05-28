@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://d365-bizapps-guru.vercel.app/sitemap.xml
